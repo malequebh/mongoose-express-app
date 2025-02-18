@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI).then(()=>{
-console.log("connected to database");
+console.log("connected to the database");
 }).catch(err=>console.log(err))
 
 app.listen(process.env.PORT, () => {
